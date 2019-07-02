@@ -6,8 +6,10 @@ This is a boilerplate project of Spring Boot.
 
 * javadoc: Generates Javadoc API documentation for the main source code.
 
-* check: Runs all checks.
+* googleJavaFormat: Reformat all java source files with google's java format.
+
 * test: Runs the unit tests.
+* check: Runs all checks.
 
 * bootJar: Assembles an executable jar archive containing the main classes and their dependencies.
 * bootRun: Runs this project as a Spring Boot application.
