@@ -2,6 +2,10 @@
 
 This is a boilerplate project of Spring Boot.
 
+## Requirements
+
+* JDK11
+
 ## Gradle Tasks
 
 * javadoc: Generates Javadoc API documentation for the main source code.
