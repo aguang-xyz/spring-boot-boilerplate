@@ -1,15 +1,20 @@
 buildscript {
   ext {
     springBootVersion = '2.1.6.RELEASE'
-    googleCodeFormatVersion = '0.8'
+    spotBugsVersion = '2.0.0'
   }
 
   repositories {
     mavenCentral()
+
+    maven {
+      url 'https://plugins.gradle.org/m2/'
+    }
   }
 
   dependencies {
     classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    classpath("gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:${spotBugsVersion}")
   }
 }
 
@@ -20,6 +25,7 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: "com.github.spotbugs"
 
 group = 'xya.aguang'
 version = '1.0.0.SNAPSHOT'
