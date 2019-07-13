@@ -1,1 +1,1 @@
-rootProject.name = 'spring-boot-boilerplate'
+rootProject.name = java.nio.file.Paths.get(System.getProperty('user.dir')).getFileName()
