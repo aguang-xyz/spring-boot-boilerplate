@@ -43,6 +43,11 @@ dependencies {
   testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
+spotbugs {
+
+  reportLevel = 'high'
+}
+
 javadoc.dependsOn check
 
 bootJar.dependsOn check
